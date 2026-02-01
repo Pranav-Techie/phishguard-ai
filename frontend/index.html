@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishguard AI</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <div class="container">
+        <h1>Phishguard AI</h1>
+        <p class="subtitle">Explainable phishing detection for messages</p>
+
+        <textarea id="messageInput" placeholder="Paste SMS / email / Whatsapp message here..."></textarea>
+
+        <button onclick="analyzeMessage()">Analyze Message</button>
+
+        <div id="result" class="hidden">
+            <h2 id="status"></h2>
+            <p><strong>Confidence:</strong> <span id="confidence"></span></p>
+            
+            <div id="signalsSection">
+  <h3>Detected Signals</h3>
+  <ul id="highlights"></ul>
+</div>
+
+<div id="explanationSection">
+  <h3>Explanation</h3>
+  <ul id="explanations"></ul>
+</div>
+
+<div id="adviceSection">
+  <h3>Safety Advice</h3>
+  <ul id="advice"></ul>
+</div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+ </body>
+</html>
