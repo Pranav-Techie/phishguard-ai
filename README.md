@@ -3,97 +3,115 @@
 **Explainable Phishing Detection for Messages**
 
 PhishGuard AI is a real-time, explainable phishing detection system that analyzes text messages and clearly explains *why* a message is suspicious.  
-Unlike black-box spam filters, PhishGuard AI highlights risky signals, provides human-readable explanations, and gives actionable safety advice.
+Unlike black-box spam filters, PhishGuard AI highlights risky signals, provides human-readable explanations, and gives actionable safety advice to users.
 
-**Live Demo:**  
-Frontend → https://phishguard-ai-hazel.vercel.app/  
-Backend API → https://phishguard-ai-backend-9nd8.onrender.com/
+**Live Demo**  
+Frontend: https://phishguard-ai-hazel.vercel.app/  
+Backend API: https://phishguard-ai-backend-9nd8.onrender.com/
 
 ---
 
 ## Problem Statement
 
-Phishing attacks through SMS, email, and chat messages are increasing rapidly.  
-While many systems detect phishing, most fail to explain *why* a message is dangerous, making users confused and more likely to fall for scams.
+Phishing attacks through SMS, email, and chat platforms are increasing rapidly.  
+Although many systems can detect phishing, most operate as **black boxes**, providing no explanation of *why* a message is dangerous.
 
-**Key challenges:**
-- Lack of transparency in phishing detection
-- Users don’t understand risk signals
-- Black-box AI systems reduce trust
+This lack of transparency:
+- Reduces user trust
+- Prevents learning and awareness
+- Makes users more vulnerable to future attacks
 
 ---
 
 ## Solution
 
-PhishGuard AI solves this by combining **rule-based intelligence with explainability**.
+PhishGuard AI addresses this problem by focusing on **explainability-first phishing detection**.
 
-The system:
-- Detects phishing-related patterns and keywords
-- Highlights suspicious signals
-- Explains the reasoning in simple language
-- Provides clear safety advice to users
+Instead of returning a simple “safe” or “unsafe” result, the system:
+- Identifies suspicious linguistic patterns (urgency, authority, action pressure)
+- Highlights risky keywords and links
+- Explains the reasoning in clear, human-readable language
+- Provides actionable safety advice
 
-This makes phishing detection **transparent, educational, and trustworthy**.
+This approach makes phishing detection **transparent, educational, and trustworthy**.
+
+---
+
+## Hybrid AI Approach
+
+PhishGuard AI follows a **hybrid AI design philosophy**.
+
+The current implementation uses **rule-based, explainable intelligence** to detect phishing indicators.  
+This ensures predictable behavior, transparency, and strong user trust—critical factors in security applications.
+
+The system architecture is designed to support a future **machine learning–based scoring layer**, where lightweight NLP models can provide probabilistic confidence scores alongside rule-based reasoning.
+
+This hybrid approach balances:
+- **Explainability** – users understand *why* a message is risky  
+- **Accuracy** – ML-assisted scoring can improve detection  
+- **Trust** – no blind, black-box decisions  
+
+By prioritizing explainable AI first, PhishGuard AI ensures users are informed rather than blindly warned.
 
 ---
 
 ## How It Works
 
-1. User enters a message in the web interface
-2. Frontend sends the message to the FastAPI backend
-3. Backend analyzes the text for phishing indicators
-4. API returns:
-   - Phishing verdict
-   - Confidence score
-   - Detected signals
-   - Explanation
-   - Safety advice
-5. Frontend displays results with color-coded feedback
+1. The user enters a message in the web interface  
+2. The frontend sends the message to the FastAPI backend  
+3. The backend analyzes the text for phishing indicators  
+4. The API returns:
+   - Phishing verdict  
+   - Confidence score  
+   - Detected signals  
+   - Explanation  
+   - Safety advice  
+5. Results are displayed with clear, color-coded feedback  
 
 ---
 
-## Features
+## Key Features
 
-- Real-time phishing detection
-- Explainable AI output (no black box)
-- Confidence score
-- Color-coded results (Safe / Phishing)
-- Highlighted suspicious keywords
-- User-friendly safety advice
-- Fully deployed (Vercel + Render)
+- Real-time phishing detection  
+- Explainable AI output (no black box)  
+- Confidence scoring  
+- Color-coded results (Safe / Phishing)  
+- Highlighted suspicious keywords  
+- Clear safety recommendations  
+- Fully deployed and publicly accessible  
 
 ---
 
 ## Tech Stack
 
 **Frontend**
-- HTML
-- CSS
-- JavaScript
-- Deployed on **Vercel**
+- HTML  
+- CSS  
+- JavaScript  
+- Deployed on Vercel  
 
 **Backend**
-- Python
-- FastAPI
-- Uvicorn
-- Deployed on **Render**
+- Python  
+- FastAPI  
+- Uvicorn  
+- Deployed on Render  
 
 ---
 
 ## Future Scope
 
-- Browser extension for real-time email phishing detection
-- SMS phishing detection on mobile devices
-- WhatsApp / Telegram scam analysis
-- Hybrid ML + rule-based phishing detection
-- Multi-language phishing detection support
+- 🔌 Browser extension for Gmail and Chrome phishing detection  
+- 📱 SMS phishing detection for Android devices  
+- 💬 WhatsApp / Telegram scam analysis through bot or paste-based input  
+- 🤖 Hybrid ML + rule-based phishing detection for improved accuracy  
+- 🌐 Multi-language phishing detection for global users  
 
 ---
 
 ## Author
 
 **Pranav Kumar Jha**  
-GitHub: https://github.com/Pranav-Techie
+GitHub: https://github.com/Pranav-Techie  
 
 ---
 
@@ -101,6 +119,5 @@ GitHub: https://github.com/Pranav-Techie
 
 PhishGuard AI demonstrates how explainable security systems can empower users to
 understand and avoid phishing attacks.  
-By focusing on transparency and usability, the project delivers a practical and
-trustworthy solution for real-world communication platforms.
-
+By prioritizing transparency, trust, and real-world usability, the project delivers
+a practical and scalable solution for modern communication platforms.
