@@ -45,7 +45,7 @@ def analyze_text(text: str):
         "Never share any OTP or payment details with anyone."
     ]
 
-    # 
+    
     # ALWAYS RETURN (THIS FIXES NULL)
     return {
         "is_phishing": is_phishing,
