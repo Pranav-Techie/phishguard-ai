@@ -13,6 +13,8 @@ const statusEl = document.getElementById("status");
 statusEl.innerText = "Waking up secure analysis engine...";
 statusEl.style.color = "#facc15";
 
+resultDiv.classList.remove("hidden");
+
 // Force minimum loading time for better UX demo
 await new Promise(resolve => setTimeout(resolve, 1000));
 
