@@ -8,6 +8,12 @@ async function analyzeMessage() {
   const resultDiv = document.getElementById("result");
   resultDiv.classList.add("hidden");
 
+  // Show loading / cold-start message immediately
+const statusEl = document.getElementById("status");
+statusEl.innerText = "Waking up secure analysis engine...";
+statusEl.style.color = "#facc15"; 
+
+
   try {
     const response = await fetch("https://phishguard-ai-backend-9nd8.onrender.com/analyze", {
       method: "POST",
