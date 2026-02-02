@@ -11,7 +11,10 @@ async function analyzeMessage() {
   // Show loading / cold-start message immediately
 const statusEl = document.getElementById("status");
 statusEl.innerText = "Waking up secure analysis engine...";
-statusEl.style.color = "#facc15"; 
+statusEl.style.color = "#facc15";
+
+// Force minimum loading time for better UX demo
+await new Promise(resolve => setTimeout(resolve, 1000));
 
 
   try {
